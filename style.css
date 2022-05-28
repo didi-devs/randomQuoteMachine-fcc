@@ -3,11 +3,17 @@
   width: 800px;
   height: 100%;
   left: 440px;
+  block-size: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card-body {
-  align-items: initial;
+  align-items: center;
   width: auto;
   justify-content: center;
+  min-height: auto;
+  position: left;
 }
 .footer {
     text-align: center;
@@ -16,6 +22,7 @@
   width: 100%;
   min-width: 1000px;
   height: auto;
+
 }
 * {
   margin: 1;
@@ -29,13 +36,14 @@ body {
   background: linear-gradient(
       -45deg,
       rgb(62, 226, 163),
-      #14a586,
-      #095f91,
-      #b941af,
+      rgb(20, 165, 134),
+      rgb(9, 95, 145),
+      rgb(185, 65, 175),
       rgb(189, 17, 117),
-      #f52a2a
-    ),
-    rgb(100, 7, 38);
+      rgb(245, 42, 42),
+      rgb(100, 7, 38)
+    );
+    
   background-size: 400% 400%;
   position: relative;
   animation: change 15s ease-in-out infinite;
@@ -55,3 +63,6 @@ body {
     background-position: 0 50%;
   }
 }
+
+
+#footer { margin: 0 auto; }
